@@ -1,0 +1,10 @@
+# QuoraChallenge
+''' The quorachallenge framework
+
+In order to easily take part in these challenges, the first thing to do is to install the quorachallenge framework.
+
+At your command prompt :
+
+$ pip install quorachallenge
+
+and make sure you read the documentation : Quora Challenge: Quora Challenge Framework. The framework provides easy access to the challenge description and to automated testing of your solution. '''
