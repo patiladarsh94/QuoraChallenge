@@ -19,7 +19,9 @@ def segment_counter(string):
         temp_str=string[i]
         if i==len(string)-1:
             if string[i]!=string[i-1]:
-                count+=1 
+                count+=1
+            else:
+                count+=1
         else:
             if string[i]==string[i+1]:
                 temp_str+=string[i+1]
