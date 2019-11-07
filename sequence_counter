@@ -1,0 +1,25 @@
+# This functions takes a string as argument and returns list of lists
+# Example
+# input : abbcca , segment : a, bb, cc, a
+#output : [['a',1]['b',2]['c',2]['a',1]
+
+
+
+def sequence_count(string):
+    count=1
+    list1=[]
+    for i in range(len(string)):
+        if i!=len(string)-1:
+            if string[i]==string[i+1]:
+                count+=1
+            else:
+                list1.append([string[i],count])
+                count=1
+        else:
+            if string[i]==string[i-1]:
+                print("Hellllo")
+                list1[-1]=[string[i],list1[-1][-1]+1]
+            else:
+                list1.append([string[i],count])
+    return list1
+print(sequence_count("abbccba"))
